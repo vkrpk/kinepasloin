@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    *{
+        box-sizing: border-box
+    }
+    #app{
+        @apply min-h-screen flex flex-col bg-secondary items-center;
+    }
+    h2 {
+        @apply text-blue-500;
+    }
+    label {
+        @apply block w-56;
+    }
+    input:not([type="submit"]), select {
+        @apply mb-4 ;
+    }
+    select {
+        @apply w-[226px];
+    }
+    #programmation {
+        @apply flex flex-col
+    }
+    #programmation a {
+        @apply text-xl text-center bg-clair hover:underline border-x border-primary border-t py-1
+    }
+    table, th, td {
+        @apply border border-primary
+      }
+      table{
+        @apply mb-6
+      }
+      #asidePosterFilm p span {
+        @apply underline font-semibold
+      }
+      #asidePosterFilm p  {
+        @apply mb-1 text-justify
+      }
+}
