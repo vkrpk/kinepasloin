@@ -25,18 +25,18 @@
         @apply flex flex-col
     }
     #programmation a {
-        @apply text-xl text-center bg-clair hover:underline border-x border-primary border-t py-1
+        @apply text-xl text-center bg-clair hover:underline border-x border-primary border-t py-1 block
     }
     table, th, td {
         @apply border border-primary
       }
       table{
-        @apply mb-6
+        @apply mb-6 w-full
       }
       #asidePosterFilm p span {
         @apply underline font-semibold
       }
       #asidePosterFilm p  {
-        @apply mb-1 text-justify
+        @apply mb-1
       }
 }

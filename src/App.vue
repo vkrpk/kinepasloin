@@ -1,20 +1,13 @@
-  <script>
-  import Nav from './components/Nav.vue'
-  import Footer from './components/Footer.vue'
-
-  export default {
-    name: 'App',
-    components: {
-      Nav,
-      Footer
-    }
-  }
-  </script>
+<script setup>
+  import { RouterView, RouterLink } from 'vue-router'
+  import Nav from './components/includes/Nav.vue'
+  import Footer from './components/includes/Footer.vue'
+</script>
 
 <template>
   <Nav />
   <main class="container grow pb-10" id="main">
-
+    <router-view />
   </main>
   <Footer />
 </template>
