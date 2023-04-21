@@ -13,7 +13,6 @@ export default ({
                 <li class="hover:text-clair "><router-link :to="{name: 'accueil'}">Home</router-link></li>
                 <li class="hover:text-clair "><router-link :to="{name: 'tarif'}">Tarifs</router-link></li>
                 <li class="hover:text-clair  whitespace-nowrap"><router-link :to="{name: 'newsletter'}">Inscription Newsletter</router-link></li>
-                <li class="hover:text-clair "><router-link :to="{name: 'panier'}">Panier</router-link></li>
             </ul>
         </footer>
 </template>

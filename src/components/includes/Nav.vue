@@ -31,9 +31,6 @@ export default ({
                         <li>
                             <router-link :to="{name: 'newsletter'}" class="block py-2 pl-3 pr-4 text-secondary rounded hover:bg-secondary md:hover:bg-transparent md:bg-transparent md:p-0 dark:text-white md:dark:text-blue-500 md:hover:text-clair hover:text-primary">Inscription Newsletter</router-link>
                         </li>
-                        <li>
-                            <router-link :to="{name: 'panier'}" class="block py-2 pl-3 pr-4 text-secondary rounded hover:bg-secondary md:hover:bg-transparent md:bg-transparent md:p-0 dark:text-white md:dark:text-blue-500 md:hover:text-clair hover:text-primary">Panier</router-link>
-                        </li>
                     </ul>
                 </div>
             </div>
