@@ -82,7 +82,7 @@ defineComponent({
 </script>
 
 <template>
-    <h1 class="text-left my-6 text-2xl text-primary ">S'inscrire à la Newsletter</h1>
+    <h1 class="text-center my-6 text-2xl text-primary ">Nos tarifs</h1>
     <form class="flex flex-col">
         <div class="mx-auto">
             <label for="billetEnfant">Nombre de billets enfants (8€)</label>

@@ -8,6 +8,6 @@ export default ({
 </script>
 
 <template>
-    <h1 class="text-left my-6 text-2xl text-primary ">Panier</h1>
+    <h1 class="text-center my-6 text-2xl text-primary ">Panier</h1>
 
 </template>

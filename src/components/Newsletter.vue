@@ -64,7 +64,7 @@ const submitForm = async (event) => {
 </script>
 
 <template>
-    <h1 class="text-left my-6 text-2xl text-primary ">S'inscrire à la Newsletter</h1>
+    <h1 class="text-center my-6 text-2xl text-primary ">S'inscrire à la Newsletter</h1>
     <form class="grid grid-cols-1">
         <div class="mx-auto">
             <label for="genre">Genre</label>
