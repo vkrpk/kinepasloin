@@ -65,61 +65,61 @@ const submitForm = async (event) => {
 
 <template>
     <h1 class="text-left my-6 text-2xl text-primary ">S'inscrire à la Newsletter</h1>
-    <form class="grid md:grid-cols-2 grid-cols-1">
+    <form class="grid grid-cols-1">
         <div class="mx-auto">
             <label for="genre">Genre</label>
             <select class="px-4 py-3 rounded" id="genre" v-model="state.genre" name="genre">
                 <option value="homme">Homme</option>
                 <option value="femme">Femme</option>
             </select>
-            <p v-for="error in v$.genre.$errors" :key="error.$uid" class="text-red-500">{{ error.$message }}</p>
+            <p v-for="error in v$.genre.$errors" :key="error.$uid" class="text-red-500 max-w-[288px]">{{ error.$message }}</p>
         </div>
         <div class="mx-auto">
             <label for="nom">Nom</label>
             <input placeholder="Nom" type="text" class="rounded" name="nom" id="nom" v-model="state.nom"/>
-            <p v-for="error in v$.nom.$errors" :key="error.$uid" class="text-red-500">{{ error.$message }}</p>
+            <p v-for="error in v$.nom.$errors" :key="error.$uid" class="text-red-500 max-w-[288px]">{{ error.$message }}</p>
         </div>
         <div class="mx-auto h-max">
             <label for="prenom">Prénom</label>
             <input placeholder="Prénom" type="text" class="rounded" name="prenom" id="prenom" v-model="state.prenom"/>
-            <p v-for="error in v$.prenom.$errors" :key="error.$uid" class="text-red-500">{{ error.$message }}</p>
+            <p v-for="error in v$.prenom.$errors" :key="error.$uid" class="text-red-500 max-w-[288px]">{{ error.$message }}</p>
         </div>
         <div class="mx-auto">
             <label for="numero">Numéro</label>
             <input placeholder="Numéro" type="text" class="rounded" name="numero" id="numero" v-model="state.numero"/>
-            <p v-for="error in v$.numero.$errors" :key="error.$uid" class="text-red-500">{{ error.$message }}</p>
+            <p v-for="error in v$.numero.$errors" :key="error.$uid" class="text-red-500 max-w-[288px]">{{ error.$message }}</p>
         </div>
         <div class="mx-auto">
             <label for="rue">Rue</label>
             <input placeholder="Rue" type="text" class="rounded" name="rue" id="rue" v-model="state.rue"/>
-            <p v-for="error in v$.rue.$errors" :key="error.$uid" class="text-red-500">{{ error.$message }}</p>
+            <p v-for="error in v$.rue.$errors" :key="error.$uid" class="text-red-500 max-w-[288px]">{{ error.$message }}</p>
         </div>
         <div class="mx-auto">
             <label for="codePostal">Code postal</label>
             <input placeholder="Code postal" type="text" class="rounded" name="codePostal" id="codePostal" pattern="^\d+$" v-model="state.codePostal"/>
-            <p v-for="error in v$.codePostal.$errors" :key="error.$uid" class="text-red-500">{{ error.$message }}</p>
+            <p v-for="error in v$.codePostal.$errors" :key="error.$uid" class="text-red-500 max-w-[288px]">{{ error.$message }}</p>
         </div>
 
         <div class="mx-auto">
             <label for="ville">Ville</label>
             <input placeholder="Ville" type="text" class="rounded" name="ville" id="ville" v-model="state.ville"/>
-            <p v-for="error in v$.ville.$errors" :key="error.$uid" class="text-red-500">{{ error.$message }}</p>
+            <p v-for="error in v$.ville.$errors" :key="error.$uid" class="text-red-500 max-w-[288px]">{{ error.$message }}</p>
         </div>
         <div class="mx-auto">
             <label for="dateDeNaissance">Date de naissance</label>
-            <input placeholder="Date de naissance" type="date" class="rounded w-56" name="dateDeNaissance" id="dateDeNaissance" v-model="state.dateDeNaissance"/>
-            <p v-for="error in v$.dateDeNaissance.$errors" :key="error.$uid" class="text-red-500">{{ error.$message }}</p>
+            <input placeholder="Date de naissance" type="date" class="rounded" name="dateDeNaissance" id="dateDeNaissance" v-model="state.dateDeNaissance"/>
+            <p v-for="error in v$.dateDeNaissance.$errors" :key="error.$uid" class="text-red-500 max-w-[288px]">{{ error.$message }}</p>
         </div>
         <div class="mx-auto">
             <label for="email">Adresse mail</label>
             <input placeholder="Adresse mail" type="text" class="rounded" name="email" id="email" v-model="state.email.email"/>
-            <p v-for="error in v$.email.email.$errors" :key="error.$uid" class="text-red-500">{{ error.$message }}</p>
+            <p v-for="error in v$.email.email.$errors" :key="error.$uid" class="text-red-500 max-w-[288px]">{{ error.$message }}</p>
         </div>
         <div class="mx-auto">
             <label for="confirmationEmail">Confirmation de l'adresse mail</label>
             <input placeholder="Confirmation de l'adresse mail" type="text" class="rounded" name="confirmationEmail" id="confirmationEmail" v-model="state.email.confirm"/>
-            <p v-for="error in v$.email.confirm.$errors" :key="error.$uid" class="text-red-500">{{ error.$message }}</p>
+            <p v-for="error in v$.email.confirm.$errors" :key="error.$uid" class="text-red-500 max-w-[288px]">{{ error.$message }}</p>
         </div>
-        <button @click="submitForm" class="rounded-md bg-clair text-xl px-3 py-2 text-primary border border-primary w-56 mx-auto" type="submit">Valider</button>
+        <button @click="submitForm" class="rounded-md bg-clair text-xl px-3 py-2 text-primary border border-primary mx-auto" type="submit">Valider</button>
     </form>
 </template>

@@ -18,9 +18,7 @@
     form div {
         @apply mb-4 ;
     }
-    select {
-        @apply w-[226px];
-    }
+
     #programmation {
         @apply flex flex-col
     }
@@ -39,7 +37,10 @@
       #asidePosterFilm p  {
         @apply mb-1
       }
-      /* input{
+       input, select, button[type="submit"], #dateDeNaissance{
+        width: 288px;
+      }
+      #programmation div:last-child table{
         @apply mb-0
-      } */
+      }
 }
